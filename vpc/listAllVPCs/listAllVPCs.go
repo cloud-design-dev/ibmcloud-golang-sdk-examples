@@ -22,7 +22,7 @@ func main() {
 
 	result := listAllVPCs(apikey, &resource_group, url)
 
-	j, _ := json.MarshalIndent(result.Vpcs, "", "  ")
+	j, _ := json.MarshalIndent(result, "", "  ")
 	fmt.Println(string(j))
 }
 
